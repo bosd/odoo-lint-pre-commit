@@ -19,7 +19,7 @@ repos:
       - id: odoo-lint
 ```
 
-The hook lints the staged `.py`, `.po` and `.pot` files, and skips the ones
+The hook lints the staged `.py`, `.xml`, `.po` and `.pot` files, and skips the ones
 your configuration excludes. odoo-lint reads its
 configuration from `[tool.odoo-lint]` in `pyproject.toml`, or from
 `odoo-lint.toml`; see the

@@ -3,7 +3,7 @@
   description: "Lint Odoo addons with odoo-lint: pylint-odoo and oca-checks-po checks, in Rust"
   entry: odl check --force-exclude
   language: python
-  files: \.(py|po|pot)$
+  files: \.(py|xml|po|pot)$
   args: []
   require_serial: true
   additional_dependencies: []
