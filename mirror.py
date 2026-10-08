@@ -58,7 +58,7 @@ def main() -> None:
         update("README.md", r"rev: v[^\s]+", f"rev: v{version}")
         subprocess.run(["git", "add", "pyproject.toml", "README.md"], check=True)
         subprocess.run(["git", "commit", "-m", f"Mirror: {version}"], check=True)
-        subprocess.run(["git", "tag", f"v{version}"], check=True)
+        subprocess.run(["git", "tag", "-a", f"v{version}", "-m", f"odoo-linter {version}"], check=True)
 
 
 if __name__ == "__main__":
