@@ -1,0 +1,13 @@
+[project]
+name = "odoo-lint-pre-commit"
+version = "0.0.0"
+dependencies = [
+    "odoo-linter==0.1.0a1",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = []

@@ -1,0 +1,10 @@
+- id: odoo-lint
+  name: odoo-lint
+  description: "Lint Odoo addons with odoo-lint: pylint-odoo and oca-checks-po checks, in Rust"
+  entry: odl check --force-exclude
+  language: python
+  files: \.(py|po|pot)$
+  args: []
+  require_serial: true
+  additional_dependencies: []
+  minimum_pre_commit_version: "2.9.2"
