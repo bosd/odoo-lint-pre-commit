@@ -2,7 +2,7 @@
 name = "odoo-lint-pre-commit"
 version = "0.0.0"
 dependencies = [
-    "odoo-linter==0.1.0a6",
+    "odoo-linter==0.1.0a7",
 ]
 
 [build-system]
