@@ -25,6 +25,14 @@ configuration from `[tool.odoo-lint]` in `pyproject.toml`, or from
 `odoo-lint.toml`; see the
 [configuration docs](https://odoo-lint.readthedocs.io/en/latest/configuration.html).
 
+To try odoo-lint next to the linters that gate your commits, use the
+advisory hook instead (odoo-lint 0.1.0a8 and later). It shows the findings on
+every commit but never fails it:
+
+```yaml
+      - id: odoo-lint-advisory
+```
+
 To apply the safe fixes as well (odoo-lint 0.1.0a2 and later):
 
 ```yaml

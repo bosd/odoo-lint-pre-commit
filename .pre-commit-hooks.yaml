@@ -8,3 +8,14 @@
   require_serial: true
   additional_dependencies: []
   minimum_pre_commit_version: "2.9.2"
+- id: odoo-lint-advisory
+  name: odoo-lint (advisory)
+  description: "odoo-lint's findings on every commit, without failing it (odoo-lint 0.1.0a8 and later)"
+  entry: odl check --force-exclude --exit-zero
+  language: python
+  files: \.(py|xml|po|pot)$
+  args: []
+  require_serial: true
+  verbose: true
+  additional_dependencies: []
+  minimum_pre_commit_version: "2.9.2"
