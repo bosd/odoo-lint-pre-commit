@@ -14,7 +14,7 @@ In `.pre-commit-config.yaml`:
 ```yaml
 repos:
   - repo: https://github.com/bosd/odoo-lint-pre-commit
-    rev: v0.1.0a8
+    rev: v0.1.0a9
     hooks:
       - id: odoo-lint
 ```
