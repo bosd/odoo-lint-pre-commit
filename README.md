@@ -33,6 +33,15 @@ every commit but never fails it:
       - id: odoo-lint-advisory
 ```
 
+To format XML files and stylesheets (only whitespace moves; odoo-lint
+0.1.0a12 and later), and to write `requirements.txt` from the manifests'
+`external_dependencies`, as OCA's `oca-gen-external-dependencies` does:
+
+```yaml
+      - id: odoo-lint-format
+      - id: odoo-lint-requirements
+```
+
 To apply the safe fixes as well (odoo-lint 0.1.0a2 and later):
 
 ```yaml

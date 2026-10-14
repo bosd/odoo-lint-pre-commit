@@ -19,3 +19,21 @@
   verbose: true
   additional_dependencies: []
   minimum_pre_commit_version: "2.9.2"
+- id: odoo-lint-format
+  name: odoo-lint format
+  description: "Format XML, SCSS, CSS and Less, moving only whitespace (odoo-lint 0.1.0a12 and later)"
+  entry: odl format --force-exclude
+  language: python
+  files: \.(xml|scss|css|less)$
+  require_serial: true
+  additional_dependencies: []
+  minimum_pre_commit_version: "2.9.2"
+- id: odoo-lint-requirements
+  name: odoo-lint requirements
+  description: "Write requirements.txt from the manifests' external_dependencies (odoo-lint 0.1.0a12 and later)"
+  entry: odl requirements
+  language: python
+  files: (__manifest__\.py|pyproject\.toml)$
+  pass_filenames: false
+  additional_dependencies: []
+  minimum_pre_commit_version: "2.9.2"
