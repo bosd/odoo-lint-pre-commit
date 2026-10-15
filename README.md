@@ -19,7 +19,7 @@ repos:
       - id: odoo-lint
 ```
 
-The hook lints the staged `.py`, `.xml`, `.po` and `.pot` files, and skips the ones
+The hook lints the staged `.py`, `.xml`, `.po`, `.pot` and (odoo-lint 0.1.0a13 and later) `.js` files, and skips the ones
 your configuration excludes. odoo-lint reads its
 configuration from `[tool.odoo-lint]` in `pyproject.toml`, or from
 `odoo-lint.toml`; see the
@@ -40,6 +40,12 @@ To format XML files and stylesheets (only whitespace moves; odoo-lint
 ```yaml
       - id: odoo-lint-format
       - id: odoo-lint-requirements
+```
+
+To build each addon's README from its `readme/` fragments:
+
+```yaml
+      - id: odoo-lint-readme
 ```
 
 To apply the safe fixes as well (odoo-lint 0.1.0a2 and later):
